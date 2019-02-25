@@ -17,7 +17,7 @@
         <a href="" class="btn">View My Portfolio&nbsp; &nbsp;<i class="fas fa-arrow-right"></i></a> 
       </div>
       <div class="col-md-6 myPhoto">
-         <img src="https://dyn.web.whatsapp.com/pp?e=https%3A%2F%2Fpps.whatsapp.net%2Fv%2Ft61.11540-24%2F46260830_212632059649175_8336495370796269568_n.jpg%3Foe%3D5C3A9DF7%26oh%3D4b7e262411e614e14448296a150fa1e9&t=l&u=201068668630%40c.us&i=1544656250" alt="">
+         <img :src='imgs.img1' alt="">
       </div>
    </div>
 </template>
@@ -25,6 +25,13 @@
 <script>
 export default {
   name: 'myHeader',
+  data(){
+    return{
+      imgs:{
+        img1:require('../assets/images/abdo.jpg')
+        }
+    }
+  }
  
 }
 </script>
